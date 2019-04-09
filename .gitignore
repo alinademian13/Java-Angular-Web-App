@@ -11,11 +11,23 @@
 .project
 .classpath
 .c9/
+*.launch
 .settings/
+*.sublime-workspace
 
-# IntelliJ
-/out/
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
 
-### Java ###
-# Compiled class file
-*.class
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
