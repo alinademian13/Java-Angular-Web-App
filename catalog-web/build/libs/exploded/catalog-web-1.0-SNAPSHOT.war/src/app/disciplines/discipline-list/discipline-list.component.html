@@ -1,0 +1,22 @@
+<div *ngIf="selectedDiscipline">
+  <h6>
+    {{selectedDiscipline.title | uppercase}} was selected
+  </h6>
+  <button (click)="gotoDetail()" class="details-button btn btn-outline-danger" type="button">View Details</button>
+</div>
+
+<div>
+  <ol class="disciplines">
+    <li *ngFor="let discipline of disciplines"
+      [class.selected]="discipline === selectedDiscipline"
+      (click)="onSelect(discipline)">
+      {{discipline.title}}
+    </li>
+  </ol>
+</div>
+
+<div class="delete-btn">
+  <button (click)="delete()" type="button" class="delete-btn btn btn-outline-danger">Delete lab problem</button>
+</div>
+
+

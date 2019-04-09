@@ -1,0 +1,4 @@
+rootProject.name = 'catalog-2-crud-no-delete'
+include 'catalog-core'
+include 'catalog-web'
+

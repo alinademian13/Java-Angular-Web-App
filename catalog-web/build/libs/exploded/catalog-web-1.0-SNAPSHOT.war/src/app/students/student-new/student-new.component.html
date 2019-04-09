@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <td><label>Name:</label></td>
+    <td><input #name></td>
+
+  </tr>
+  <tr>
+    <td><label>Group number:</label></td>
+    <td><input #groupNumber></td>
+
+  </tr>
+
+</table>
+
+<div class="save-btn">
+  <button (click)="goBack()" type="button" class="btn btn-outline-danger">Back</button>
+  <button (click)="save(name.value, groupNumber.value)" type="button" class="btn btn-outline-danger">Save</button>
+</div>
+

@@ -1,0 +1,42 @@
+label {
+    display: inline-block;
+    width: 8em;
+    margin: .5em 0;
+    color: #dc3545;
+    font-weight: bold;
+}
+input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+    margin-left: 40px;
+}
+
+h3 {
+  text-align: center;
+  color: #999;
+}
+
+.details {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+td, input {
+  text-align: center;
+  margin: 10px;
+}
+
+input:focus, input:hover {
+  border-color: #dc3545;
+  outline: none !important;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+}
+

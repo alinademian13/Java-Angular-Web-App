@@ -1,0 +1,24 @@
+<div *ngIf="student">
+    <h3>Student {{student.name}} details</h3>
+    <hr>
+    <table class="details">
+
+      <tr>
+        <td><label>Name: </label></td>
+        <td>{{student.name}}</td>
+        <td><input [(ngModel)]="student.name" placeholder="name"></td>
+      </tr>
+      <tr>
+        <td><label>Group number: </label></td>
+        <td>{{student.groupNumber}}</td>
+        <td><input [(ngModel)]="student.groupNumber" placeholder="groupNumber"></td>
+      </tr>
+
+    </table>
+    <hr>
+    <div class="buttons">
+      <button (click)="goBack()" type="button" class="btn btn-outline-danger">Back</button>
+      <button (click)="save()" type="button" class="btn btn-outline-danger">Update</button>
+    </div>
+
+</div>
