@@ -1,16 +1,17 @@
 # main
-build
-.idea
+.gradle
+/build/
+/.idea/
 .project
 .classpath
 
 # catalog-core
-catalog-core/build/
-catalog-core/out/
+/catalog-core/build/
+/catalog-core/out/
 
 # catalog-web
-catalog-web/build/
-catalog-web/out/
+/catalog-web/build/
+/catalog-web/out/
 
 # System Files
 .DS_Store
