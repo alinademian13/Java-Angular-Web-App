@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <td><label>Discipline:</label></td>
+    <td><input #title></td>
+
+  </tr>
+  <tr>
+    <td><label>Teacher:</label></td>
+    <td><input #teacher></td>
+  </tr>
+  <tr>
+    <td><label>Lab number:</label></td>
+    <td><input #labNumber></td>
+  </tr>
+
+</table>
+
+<div class="save-btn">
+  <button (click)="goBack()" type="button" class="btn btn-outline-danger">Back</button>
+  <button (click)="save(title.value, teacher.value, labNumber.value)" type="button" class="btn btn-outline-danger">Save</button>
+</div>
+

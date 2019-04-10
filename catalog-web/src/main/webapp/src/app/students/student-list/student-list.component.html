@@ -1,0 +1,35 @@
+<div *ngIf="selectedStudent">
+    <h6>
+        {{selectedStudent.name | uppercase}} was selected
+    </h6>
+    <button (click)="gotoDetail()" class="details-button btn btn-outline-danger" type="button">View Details</button>
+</div>
+
+<div *ngIf="selectedStudent" class="delete-btn">
+    <button (click)="delete(selectedStudent.id)" type="button" class="delete-btn btn btn-outline-danger">Delete student</button>
+</div>
+
+<!--<div *ngIf="selectedStudent" class="enroll-btn">-->
+  <!--<button (click)="enroll()" type="button" class="enroll-btn btn btn-outline-danger">Enroll student</button>-->
+<!--</div>-->
+
+
+<div>
+  <ol class="students">
+    <li *ngFor="let student of students "
+        [class.selected]="student === selectedStudent"
+        (click)="onSelect(student)">
+      {{student.name}}
+    </li>
+  </ol>
+</div>
+
+<label>
+  {{error}}
+</label>
+
+<!--<div class="delete-btn">-->
+  <!--<button (click)="delete(selectedStudent.id)" type="button" class="delete-btn btn btn-outline-danger">Delete student</button>-->
+<!--</div>-->
+
+
